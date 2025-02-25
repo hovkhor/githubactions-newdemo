@@ -1,0 +1,12 @@
+name: commands worklow
+on: workflo_dispatch
+jobs:
+  job1:
+    runs_on: ubuntu-latest
+    steps: 
+      - name: print greetings
+        run: echo "Hello All"
+      - name: run multiple commands
+        run: | 
+          echo "Hello GitHub"
+          echo "This is a job"
